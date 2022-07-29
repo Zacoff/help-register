@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  Help_Register:
+    image: postgres:14.1-alpine
+    container_name: helpRegister
+    restart: always
+    environment:
+      - POSTGRES_USER=helpRegister
+      - POSTGRES_PASSWORD=help
+    ports:
+      - '5432:5432'
+    volumes: 
+      - Help_Register:/var/lib/postgresql/data
+volumes:
+  Help_Register:
+    driver: local

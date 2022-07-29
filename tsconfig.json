@@ -1,0 +1,16 @@
+{
+   "compilerOptions": {
+      "lib": ["es5","es6"],
+      "target": "ES2018",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "outDir": "./dist",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "strictPropertyInitialization": false
+   },
+   "exclude": ["node_modules", "dist"]
+}
