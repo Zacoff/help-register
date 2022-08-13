@@ -16,7 +16,9 @@ AppDataSource.initialize().then(async () => {
         methods : 'GET,OPTIONS,PUT,POST,DELETE',
         origin : '*'
     }))
+
     app.use(bodyParser.urlencoded({ extended : false }))
+    
     app.use(bodyParser.json())
 
     app.use(sectorRouter);

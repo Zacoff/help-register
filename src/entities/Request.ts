@@ -17,6 +17,9 @@ export class Resquest {
     @Column({ type : 'text' })
     Description : string;
 
+    @Column({ type : 'text', nullable : true })
+    Description_Solution: string
+
     @Column({ type : 'text' })
     Request_Date : string;
 
